@@ -23,22 +23,22 @@
 
 format short 
 
-[Q_max,t_max,fit,z_inf,Ss,Tfit,chi2,NDF,chi2_lsq] = Jokulhlaup_model(TIME_EsternSkafta071989, QQ_EsternSkafta071989,'07/1989','1989')
-AA1989 = [Q_max,t_max,fit(1), fit(2), fit(3),z_inf,chi2_lsq,chi2,NDF,chi2cdf(chi2,NDF)];
+[Q_max,t_max,fit,z_inf,Ss,Tfit] = Jokulhlaup_model(TIME_EsternSkafta071989, QQ_EsternSkafta071989,'07/1989','1989')
+AA1989 = [Q_max,t_max,fit(1), fit(2), fit(3)];
 SS1989 = Ss;
 TT1989 = Tfit;
 close all; 
 clear Ss,Tfit
 
-[Q_max,t_max,fit,z_inf,Ss,Tfit,chi2,NDF,chi2_lsq] = Jokulhlaup_model(TIME_EsternSkafta081991, QQ_EsternSkafta081991,'08/1991','1991')
-AA1991 = [Q_max,t_max,fit(1), fit(2), fit(3), z_inf,chi2_lsq,chi2,NDF,chi2cdf(chi2,NDF)];
+[Q_max,t_max,fit,z_inf,Ss,Tfit] = Jokulhlaup_model(TIME_EsternSkafta081991, QQ_EsternSkafta081991,'08/1991','1991')
+AA1991 = [Q_max,t_max,fit(1), fit(2), fit(3)];
 SS1991 = Ss;
 TT1991 = Tfit;
 close all; 
 clear Ss , Tfit
 
-[Q_max,t_max,fit,z_inf,Ss,Tfit,chi2,NDF,chi2_lsq] = Jokulhlaup_model(TIME_Skafta2006, QQ_Skafta2006,'04/2006','2006')
-AA2006 = [Q_max,t_max,fit(1), fit(2), fit(3), z_inf,chi2_lsq,chi2,NDF,chi2cdf(chi2,NDF)];
+[Q_max,t_max,fit,z_inf,Ss,Tfit] = Jokulhlaup_model(TIME_Skafta2006, QQ_Skafta2006,'04/2006','2006')
+AA2006 = [Q_max,t_max,fit(1), fit(2), fit(3)];
 SS2006 = Ss;
 TT2006 = Tfit;
 
@@ -49,6 +49,6 @@ AA_string = {'1989';'1991';'2006'};
 
 
 T = table(AA_string, round(AA(:,1),3), round(AA(:,2),3), round(AA(:,3),3), round(AA(:,4),3),...
-    round(AA(:,5),3),round(AA(:,6),3),round(AA(:,7),3),round(AA(:,8),3),round(AA(:,9),3),round(AA(:,10),3),'VariableNames', { 'Event', 'Q_max', 't_ref', 'beta',...
-    'alpha', 'gamma', 'z_inf', 'chi2lsq', 'chi2', 'NDF', 'probchi2lesschi2calc' })
+    round(AA(:,5),3),'VariableNames', { 'Event', 'Q_max', 't_ref', 'beta',...
+    'alpha', 'gamma' })
 writetable(T, 'Event_name.txt','Delimiter',' ')
