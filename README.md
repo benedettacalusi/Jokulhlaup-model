@@ -48,30 +48,3 @@ License
 =======
 GNU General Public License v3.0
 
-DOI Badge
-=======
-
-DOI
----------
-10.5281/zenodo.10700703
-
-Markdown
----------
-[![DOI](https://zenodo.org/badge/762699364.svg)](https://zenodo.org/doi/10.5281/zenodo.10700702)
-
-reStructuredText
----------
-.. image:: https://zenodo.org/badge/762699364.svg
-  :target: https://zenodo.org/doi/10.5281/zenodo.10700702
-
-HTML
----------
-<a href="https://zenodo.org/doi/10.5281/zenodo.10700702"><img src="https://zenodo.org/badge/762699364.svg" alt="DOI"></a>
-
-Image URL
----------
-https://zenodo.org/badge/762699364.svg
-
-Target URL
----------
-https://zenodo.org/doi/10.5281/zenodo.10700702
