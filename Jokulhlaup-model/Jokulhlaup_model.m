@@ -7,7 +7,6 @@ function [Q_max,t_max,fit,z_inf,Ss1,Tfit,chi2,NDF,chi2_lsq] = Jokulhlaup_model(T
     x0 = [0;z0]; % initial condition odes 
     [T,Xa] = ode45(@DifEq,t,x0); 
         function dX = DifEq(t,x) 
-        %H = 1; pout = 0;
         H = 1; pout = 0; hat_L = 1.4; NN = 8/3; 
         dxdt = zeros(2,1);
         dxdt(1) = fit(2).*(x(2).*(1+exp(-(max(0,x(1)))./fit(3)))./2-H+pout);
