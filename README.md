@@ -31,7 +31,11 @@ Usage
 
 Contribute
 ==========
-If you want to contribute to Jokulhlaup-model, follow the contribution guidelines and code of conduct. 
+- If you want to contribute to Jokulhlaup-model, follow the contribution guidelines and code of conduct. 
+
+ - Jokulhlaup-model is related to the following publication:
+   Calusi B., Farina A., Rosso F., A simplified mechanical model for explaining fast-rising jökulhlaups (2020), 3,
+   art. no. 100013 DOI: 10.1016/j.apples.2020.100013
 
 Credits
 =======
@@ -41,5 +45,4 @@ Credits
 
 License
 =======
-
 GNU General Public License v3.0
