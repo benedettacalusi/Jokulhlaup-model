@@ -1,4 +1,4 @@
-function [Q_max,t_max,fit,z_inf,Ss1,Tfit,chi2,NDF,chi2_lsq] = Jokulhlaup_model(TIME,QQ,AAA,AAAA)
+function [Q_max,t_max,fit,z_inf,Ss1,Tfit] = Jokulhlaup_model(TIME,QQ,AAA,AAAA)
 
     function [q,T,xx1] = dynamic_model(fit,t,Q_ref)
     H = 1; pout = 0; hat_L = 1.4; 
@@ -63,11 +63,7 @@ Ss = max(X_sol(:,1),0)
 Ss1 = [];
 Ss1 = [Ss1 Ss];
 diff = x_tot(1);
-chi2 = sum(((x_tot(2:end-1) - Xfit((2:end-1),1)).^2)./((0.3*x_tot(2:end-1)).^2));
-chi2_lsq = Rsdnrm./((0.3).^2);
-XTOT = x_tot(2:end-1);
-XFITT = Xfit((2:end-1),1);
-NDF = length(x_tot)-2; 
+
 
 %--------------------------------------------------------------------------
 
