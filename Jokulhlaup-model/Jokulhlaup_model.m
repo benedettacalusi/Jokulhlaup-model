@@ -20,7 +20,7 @@ function [Q_max,t_max,fit,z_inf,Ss1,Tfit,chi2,NDF,chi2_lsq] = Jokulhlaup_model(T
     xx1 = Xa; 
     end
 
-fit0 = [7;1;1];%0.1];%1]; % starting guess 
+fit0 = [7;1;1]; % starting guess 
 lb = [0;0;0]; % lower bound 
 ub = [1e+30;1e+30;1e+30]; % upper bound 
 
