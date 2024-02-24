@@ -43,7 +43,7 @@ x_tot = (Q_ref^(-1)).*x_tot_dim;
 
 options = optimoptions('lsqcurvefit','StepTolerance',1e-10,'TolFun', 1e-10,'MaxFunctionEvaluations',6000,'MaxIterations',3500,'Display', 'iter-detailed')%'MaxFunctionEvaluations',2000,'MaxIterations',400,'Algorithm','levenberg-marquardt',
 
-[fit,Rsdnrm,Rsd,ExFlg,OptmInfo,Lmda,Jmat]=lsqcurvefit(@dynamic_model,fit0,t_tot,x_tot,lb,ub,options); %Solve nonlinear curve-fitting (data-fitting) problems in least-squares sense 
+[fit,Rsdnrm,Rsd,ExFlg,OptmInfo,Lmda,Jmat]=lsqcurvefit(@dynamic_model,fit0,t_tot,x_tot,lb,ub,options); 
 fprintf(['The ''trust-region-reflective'' algorithm has residual norm %f,\n'],Rsdnrm) %residual = fun(x,xdata)-ydata 
 fprintf(['Exitflag: %d,\n'],ExFlg)
 
@@ -54,7 +54,7 @@ end
 
 Tfit = t_tot; %linspace(min(t_tot), max(t_tot),length(x_tot));
 Tfit2 = linspace(min(t_tot), max(t_tot),100);%length(x_tot)
-[Xfit,T,X_sol] = dynamic_model(fit, Tfit); %ci restituisce Q/Q_bar nel valore fittato così facciamo il confronto grafico con i dati 
+[Xfit,T,X_sol] = dynamic_model(fit, Tfit); 
 [Xfit2,T2,X_sol2] = dynamic_model(fit, Tfit2);
 Q_max = round(Q_ref)
 t_max = round(t_ref,1) 
