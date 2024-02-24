@@ -16,7 +16,7 @@ function [Q_max,t_max,fit,z_inf,Ss1,Tfit] = Jokulhlaup_model(TIME,QQ,AAA,AAAA)
     ss = max(0,Xa(:,1));    
     q1 = (ss.^(NN)).^(1/2);
     q2 = (Xa(:,2).^(1/2));
-    q = q1.*q2; % Portata adimensionalizzata 
+    q = q1.*q2; % Dimensionless Discharge 
     xx1 = Xa; 
     end
 
