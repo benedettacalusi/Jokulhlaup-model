@@ -1,8 +1,8 @@
-# jokulhlaup-model
+# Jokulhlaup-model
 
 Description
 ===========
-jokulhlaup-model is a MATLAB script to solve a simplified mechanical model for explaining fast-rising jokulhlaups  
+Jokulhlaup-model is a MATLAB script to solve a simplified mechanical model for explaining fast-rising jokulhlaups  
 and includes two MATLAB scripts: 
 
 Output_Jokulhlaup_model.m
@@ -31,7 +31,7 @@ Usage
 
 Contribute
 ==========
-If you want to contribute to jokulhlaup-model, follow the contribution guidelines and code of conduct. 
+If you want to contribute to Jokulhlaup-model, follow the contribution guidelines and code of conduct. 
 
 Credits
 =======
