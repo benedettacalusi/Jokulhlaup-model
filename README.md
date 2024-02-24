@@ -47,3 +47,7 @@ Credits
 License
 =======
 GNU General Public License v3.0
+
+DOI Badge
+=======
+10.5281/zenodo.10700703
