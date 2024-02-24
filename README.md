@@ -7,10 +7,11 @@ and includes two MATLAB scripts:
 
 Output_Jokulhlaup_model.m
 ---------
-It provides the plot of
+It provides 
+- the plot of
    * simulated discharge vs. data 
    * simulated emptying lake behaviour
-and creates a table with main outputs from simulation. 
+- a table with main outputs from simulation. 
 
 Jokulhlaup_model.m
 ---------
